@@ -18,7 +18,7 @@ Please go under edit and edit this file as needed for your project
 ##### • Billings.
 ##### • Control staff.
 ##### • Helps Manager to control each part of the restaurant.
-##### The main goal is to maintain the restaurant’s functions in an effective and accurate manner, and it is reducing the use of manual entries. It is keeping a proper record of the database.In this project as the client request, we identified 2 main views. 
+#### The main goal is to maintain the restaurant’s functions in an effective and accurate manner, and it is reducing the use of manual entries. It is keeping a proper record of the database.In this project as the client request, we identified 2 main views. 
 ##### • Management view - For the management point of view, the manager will be able to control the restaurant by having all the reports to hand and able to see the records of each staffand orders.
 ##### • Staff view - For the staff point of view, the cashier will be able to place order and deal with customer
 
