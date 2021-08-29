@@ -25,5 +25,5 @@ Please go under edit and edit this file as needed for your project
 
 #### Technologies used - (MERN) Express JS and MongoDB for backend and HTML, CSS, and React as frontend
 
-Note - The student's github account should be given in brackets e.g. (IT20212232), this ideally should be your student id 
+
 
