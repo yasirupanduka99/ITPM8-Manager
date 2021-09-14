@@ -5,9 +5,629 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #19224D;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+/*----------------------------------------------------------------------CSS For NavBar*/
+.container-fluid{
+  background-color: white;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: #707070;
+}
+
+
+.d-flex{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 570px;
+}
+
+#searchNav{
+  background-color: #E3E3E3;
+  color: #707070;
+  font-weight: 700;
+  border-color: #707070;
+}
+
+#searchBtnNav{
+  background-color: #707070;
+  color: white;
+  font-weight: 700;
+  border: none;
+}
+
+
+
+
+
+/*--------------------------------------------------------------------CSS For Home.js*/
+.containerFoodItem{
+  background-color: none;
+  height: max-content;
+  padding-top: 20px;
+  padding-bottom: 25px;
+
+}
+
+
+.addFoodItemBtn{
+  margin-top: 60px;
+  float: right;
+  margin-right: 40px;
+  border:solid;
+  border-color: white;
+  border-width: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  width: 180px;
+  height: 52px;
+  cursor: pointer;
+  color: white;
+  background-color: #19224D;
+  border-radius: 5px;
+}
+
+.addFoodItemBtn:hover{
+  background-color: #233381;
+}
+
+.addFoodItemBtn button:active{
+  color: #FFFFFF;
+  background: #858585;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+
+.tableFoodItem{
+    width: 1500px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: 35px;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+}
+
+.tableFoodItem th,td{
+    font-family: Segoe UI;
+    font-size: 25px;
+    padding: 20px;
+    border: solid;
+    border-color: #19224D;
+    border-width: 5px;
+    
+}
+
+.tableFoodItem th{
+  background-color: rgb(209, 209, 209);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.tableFoodItem td{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 530;
+  
+}
+
+.tableFoodItem tbody tr:hover{
+  background-color: rgb(223, 223, 223);
+}
+
+.tableFoodItem .editBtn1{
+  border: none;
+  background-color: #00A156;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 2px;
+  width: 75px;
+  height: 32px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+.tableFoodItem .editBtn1:hover{
+  background-color: #006E3B;
+}
+
+.tableFoodItem .deleteBtn1{
+  border: none;
+  background-color: #FF4D4D;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 2px;
+  width: 75px;
+  height: 32px;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+
+.tableFoodItem .deleteBtn1:hover{
+  background-color: #B50000;
+}
+
+
+
+
+
+/*------------------------------------------------------------------CSS For FoodItemDetails.js*/
+.FoodItemDetails_container{
+  background-color: white;
+  float: right;
+  width: 1500px;
+  margin-right:37px;
+  margin-Top:80px;
+  border-radius: 15px;
+  text-align: center;
+  color: #19224D;
+}
+
+.FoodItemDetails_container h4{
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.FoodItemDetails_container .row{
+  display: inline-block;
+}
+
+#FoodItemEdit_imgContainer{
+  background-color: none;
+  width: max-content;
+  height: max-content;
+}
+
+.FoodItem_activator{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+
+
+/*---------------------------------------------------------CSS for FoodItem Edit Page*/
+.FoodItemEdit_Updatedetails{
+  background-color: white;
+  width: 1000px;
+  margin-Top:80px;
+  padding-bottom: 40px;
+  border-radius: 15px;
+  text-align: center;
+  color: #19224D;
+  display: block;
+  float: right;
+  margin-right: 300px;
+}
+
+
+.FoodItemEdit_Updatedetails .containerEdit{
+  background-color: none;
+  display: inline-flex;
+}
+
+
+
+.FoodItemEdit_Updatedetails h4{
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.FoodItemEdit_Updatedetails .row{
+  display: inline-block;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#FoodItemEdit_imgContainer{
+  background-color: none;
+  width: max-content;
+  height: max-content;
+  margin-right: 50px;
+}
+
+.FoodItemEdit_Updatedetails button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.FoodItemEdit_Updatedetails button:hover{
+  background-color: #FFFFFF;
+  color: Black;
+  border: solid;
+  border-color: black;
+}
+
+.FoodItemEdit_Updatedetails button:active{
+  color: #FFFFFF;
+  background: #858585;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+.FoodItemEdit_Updatedetails .col1{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.FoodItemEdit_Updatedetails .col2{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+
+
+/*-------------------------------------------------------------CSS For ADD POPup.js*/
+#container_addFoodItem_POPUP{
+  margin-top: 30px;
+  background-color: white;
+  height: max-content;
+  text-align: left;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  height: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#container_addFoodItem_POPUP img{
+  width: 210px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 120px;
+}
+
+#container_addFoodItem_POPUP .closeBtnContainer{
+  background-color: red;
+}
+
+#container_addFoodItem_POPUP .closeBtnContainer .close{
+  float: right;
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(114, 114, 114);
+  margin-top: -20px;
+}
+
+#container_addFoodItem_POPUP .imgContainer{
+  background-color: none;
+}
+
+#container_addFoodItem_POPUP .formContainer{
+
+  height: max-content;
+  width: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  color: #707070;
+}
+
+#container_addFoodItem_POPUP .addItem_h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+#uploadcontainer{
+  margin-top: 30px;
+}
+
+#container_addFoodItem_POPUP .addItem_form_group{
+  margin-bottom: 15px;
+  display: grid;
+  font-weight: 700;
+  
+}
+
+#container_addFoodItem_POPUP .addItem_form_group label{
+  color: rgb(71, 71, 71);
+
+}
+
+#container_addFoodItem_POPUP .addItem_input{
+  width: 450px;
+  height: 40px;
+  font-weight: 700;
+  color: #707070;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+  border-color: #E3E3E3;
+}
+
+#container_addFoodItem_POPUP .addItem_Btn{
+  width: 150px;
+  height: 40px;
+  background-color: #00A156;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  float: right;
+}
+
+#container_addFoodItem_POPUP .addItem_Btn:hover{
+  background-color: #006E3B;
+}
+
+
+
+
+
+
+/*-------------------------------------------------------------CSS For Update POPup.js*/
+#container_addFoodItemEdit_POPUP{
+  margin-top: 30px;
+  background-color: white;
+  height: max-content;
+  text-align: left;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: max-content;
+  height: max-content;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#container_addFoodItemEdit_POPUP img{
+  width: 210px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 120px;
+}
+
+#container_addFoodItemEdit_POPUP .closeBtnContainer{
+  background-color: red;
+}
+
+#container_addFoodItemEdit_POPUP .closeBtnContainer .close{
+  float: right;
+  background-color: white;
+  border: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(114, 114, 114);
+  margin-top: -20px;
+}
+
+#container_addFoodItemEdit_POPUP .imgContainer{
+  background-color: none;
+}
+
+#container_addFoodItemEdit_POPUP .formContainer{
+
+  height: max-content;
+  width: max-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+  color: #707070;
+}
+
+#container_addFoodItemEdit_POPUP .addItem_h1{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+#container_addFoodItemEdit_POPUP #uploadcontainer{
+  margin-top: 30px;
+}
+
+#container_addFoodItemEdit_POPUP .addItem_form_group{
+  margin-bottom: 15px;
+  display: grid;
+  font-weight: 700;
+  
+}
+
+#container_addFoodItemEdit_POPUP .addItem_form_group label{
+  color: rgb(71, 71, 71);
+
+}
+
+#container_addFoodItemEdit_POPUP .addItem_input{
+  width: 450px;
+  height: 40px;
+  font-weight: 700;
+  color: #707070;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: solid;
+  border-width: 2px;
+  border-color: #E3E3E3;
+}
+
+#container_addFoodItemEdit_POPUP .addItem_Btn{
+  width: 150px;
+  height: 40px;
+  background-color: #00A156;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  float: right;
+}
+
+#container_addFoodItemEdit_POPUP .addItem_Btn:hover{
+  background-color: #006E3B;
+}
+
+
+
+
+
+
+/*-----------------------------------------------CSS For DashBoad*/
+
+.dashHeader2{
+  display: inline-block;
+  margin-left: 47%;
+  margin-right: auto;
+  background-color: none;
+  margin-top: 350px;
+}
+
+.dashHeader2 h1{
+  font-size: 70px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.dashHeader2 span{
+  color: #FFFFFF;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+
+/*-----------------------------------------------CSS For SideBar.js*/
+
+.dash_container{
+  margin: 0 auto;
+  background-color: none;
+  width: max-content;
+  height: 100%;
+  position: fixed;
+  top: 70px;
+}
+
+.dashbtnbox #date{
+  margin-top: 80px;
+  color: #707070;
+  text-align: center;
+  font-family: Segoe UI;
+  font-weight: 700;
+}
+
+
+.dashbtnbox{
+  border:  none;
+  background-color: white;
+  width: 340px;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  
+}
+
+.dashbtnbox button{
+  position: relative;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  background-color: #19224D;
+  font-family: Segoe UI;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.dashbtnbox button:hover{
+  background-color: #233381;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------CSS For Footer.js*/
+.footer{
+  background-color: white;
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  border-top: solid;
+  border-width: 1px;
+  border-color: #707070;
+}
+
+.footer .copyright{
+  background-color: none;
+  width: max-content;
+  margin-top: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer .copyright h1{
+  text-align: center;
+  font-family: Segoe UI;
+  font-weight: 700;
+  font-size: 15px;
+  color: #707070;
 }

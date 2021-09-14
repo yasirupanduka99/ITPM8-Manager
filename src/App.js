@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+//In here we are create Browser routers
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React, { Component } from 'react';
+import {BrowserRouter,Route} from 'react-router-dom';
+import FoodItemHome from './components/FoodItemHome';
+import Footer from './components/Footer';
+import SideBar from './components/SideBar';
+import FoodItemDetails from './components/FoodItemDetails';
+import FoodItemEdit from './components/FoodItemEdit';
+import DashBoard from './components/DashBoard';
+
+export default class App extends Component {                     // <--------------this APP class we extends using Component class
+  render() {
+    return (
+
+      <BrowserRouter>
+        
+        <div className="container1">
+          <SideBar/>
+          <Route path="/" exact component = {DashBoard}></Route>
+          <Route path="/FoodItems/edit/:id" component = {FoodItemEdit}></Route>
+          <Route path="/FoodItems" exact component = {FoodItemHome}></Route>
+          <Route path="/FoodItems/Details/:id" component = {FoodItemDetails}></Route>
+          
+        </div>
+        <Footer/>
+      </BrowserRouter>
+
+    )
+  }
 }
-
-export default App;
