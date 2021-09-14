@@ -7,7 +7,7 @@ Please go under edit and edit this file as needed for your project
 ### Member 3 - IT20162382 - Mr. Yasiru Panduka (IT20162382) 
 ### Member 4 - IT20021498 - Mr. Denura Mudalige(IT20021498) 
 ### Member 5 - IT20164980 - Mr. Thilina Nanayakkara (IT20164980)
-### Member 6 - IT20179458 - Mr. H.Rajapaksha (IT20179458)
+### Member 6 - IT20179458 - Mr. R.M.H.Rajapaksha (IT20179458)
 ### Member 7 - IT20164676 - Mr. Ravindu Induwara (IT20164676)
 ### Member 8 - IT20189730 - Mr. Ravindu Rasanga (IT20189730)
 
